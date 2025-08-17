@@ -1,0 +1,147 @@
+.cart-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cart-page h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Empty cart */
+.empty-cart {
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.continue-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background-color: #1e40af;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.continue-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Cart Items */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.cart-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  background-color: #fff;
+  gap: 10px;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.item-info {
+  flex: 1;
+  min-width: 150px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.quantity-controls button {
+  padding: 6px 10px;
+  background-color: #1e40af;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.quantity-controls button:hover {
+  background-color: #2563eb;
+}
+
+.item-total {
+  font-weight: bold;
+  min-width: 80px;
+  text-align: right;
+}
+
+.remove-btn {
+  padding: 6px 12px;
+  background-color: #dc2626;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #ef4444;
+}
+
+/* Order Summary */
+.order-summary {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 400px;
+  margin-left: auto;
+}
+
+.order-summary h2 {
+  margin-bottom: 15px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.summary-row.total {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.discount {
+  color: #dc2626;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-total {
+    text-align: left;
+  }
+
+  .order-summary {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
